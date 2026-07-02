@@ -17,12 +17,8 @@ export default function Home() {
             Hi, I'm <span className="text-gradient-purple-teal">Prachi Khandelwal</span>
           </h1>
           
-          <p className="text-lg sm:text-xl font-medium text-zinc-400 max-w-lg">
-            AI/ML Engineer, Data Scientist & Problem Solver. Building intelligent models & smart web integrations.
-          </p>
-
-          <p className="text-zinc-500 text-sm max-w-md">
-            Based in Pune, India. Student at VIT Chennai. Passionate about training neural networks, fine-tuning LLMs, designing intelligent systems, and writing high-performance code. Powered by coffee ☕
+          <p className="text-lg sm:text-xl font-medium text-zinc-400 max-w-xl leading-relaxed">
+            I'm Prachi, a Computer Science student at VIT Chennai who enjoys building projects, solving problems, and exploring new technologies through hands-on learning.
           </p>
           
           <div className="flex flex-wrap gap-4 mt-2 justify-center md:justify-start">
@@ -100,7 +96,7 @@ export default function Home() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
               </span>
-              <span className="text-xs font-semibold text-white">Pune, IN</span>
+              <span className="text-xs font-semibold text-white">Chennai, IN</span>
             </div>
             
             <div className="absolute -top-4 -right-4 glass px-4 py-2 rounded-xl flex items-center gap-2 border border-white/10 shadow-lg">
@@ -111,106 +107,61 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Highlights Dashboard Grid */}
-      <section className="flex flex-col gap-8">
-        <div className="flex flex-col gap-2">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">At A Glance</h2>
-          <p className="text-sm text-zinc-500">Quick highlights of my engineering workflow and focus areas.</p>
-        </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {/* Card 1: AI Shop */}
-          <div className="glass-card p-6 rounded-2xl flex flex-col justify-between gap-6 relative overflow-hidden group">
-            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-violet-600/10 to-transparent rounded-full -z-10" />
-            <div className="flex flex-col gap-3">
-              <div className="w-10 h-10 rounded-xl bg-violet-600/10 border border-violet-500/20 flex items-center justify-center text-violet-400">
-                <Cpu size={20} />
-              </div>
-              <h3 className="font-bold text-white text-base">Featured Project</h3>
-              <p className="text-xs text-zinc-400 line-clamp-3">
-                AI Shop - An e-commerce platform with an LLM Chatbot support integration.
-              </p>
+
+      {/* Pinned Featured Project Banner — MediAssist AI Portal */}
+      <section className="glass rounded-3xl p-8 md:p-12 relative overflow-hidden border border-rose-500/20 shadow-2xl">
+        <div className="absolute inset-0 bg-gradient-to-r from-rose-900/10 via-red-900/5 to-transparent -z-10" />
+        <div className="absolute top-0 right-0 w-64 h-64 bg-rose-600/5 rounded-full blur-3xl -z-10" />
+
+        {/* Header Row */}
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
+          <div className="flex flex-col gap-3">
+            <div className="flex items-center gap-2">
+              <span className="text-[10px] font-bold uppercase tracking-widest text-rose-400 bg-rose-500/10 border border-rose-500/20 px-3 py-1 rounded-full">📌 Pinned Project</span>
+              <span className="text-[10px] font-bold uppercase tracking-widest text-zinc-500 bg-zinc-800/50 border border-white/5 px-3 py-1 rounded-full">Multi-Agent AI · Healthcare</span>
             </div>
-            <Link href="/projects" className="text-xs font-semibold text-violet-400 hover:text-white flex items-center gap-1 group-hover:translate-x-1 transition-all mt-2">
-              View Details <ArrowRight size={12} />
-            </Link>
+            <h3 className="text-2xl sm:text-3xl font-extrabold text-white">🏥 MediAssist AI Portal</h3>
+            <p className="text-zinc-400 text-sm leading-relaxed max-w-2xl">
+              An end-to-end AI healthcare assistant that processes medical reports (PDF/images) through a 6-stage LangGraph multi-agent pipeline — OCR extraction, LLM parsing, RAG retrieval, patient-friendly explanation, auto-summarization, and personalized nutrition recommendations. Powered locally by Qwen 2.5 (7B) via Ollama with ChromaDB vector search.
+            </p>
           </div>
-
-          {/* Card 2: AI/ML Engineering */}
-          <div className="glass-card p-6 rounded-2xl flex flex-col justify-between gap-6 relative overflow-hidden group">
-            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-emerald-600/10 to-transparent rounded-full -z-10" />
-            <div className="flex flex-col gap-3">
-              <div className="w-10 h-10 rounded-xl bg-emerald-600/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
-                <Cpu size={20} />
-              </div>
-              <h3 className="font-bold text-white text-base">AI/ML Engineering</h3>
-              <p className="text-xs text-zinc-400 line-clamp-3">
-                Training predictive models, designing custom neural nets, and integrating intelligent LLM APIs.
-              </p>
-            </div>
-            <Link href="/projects" className="text-xs font-semibold text-emerald-400 hover:text-white flex items-center gap-1 group-hover:translate-x-1 transition-all mt-2">
-              See Projects <ArrowRight size={12} />
-            </Link>
-          </div>
-
-          {/* Card 3: DSA Problem Solver */}
-          <div className="glass-card p-6 rounded-2xl flex flex-col justify-between gap-6 relative overflow-hidden group">
-            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-indigo-600/10 to-transparent rounded-full -z-10" />
-            <div className="flex flex-col gap-3">
-              <div className="w-10 h-10 rounded-xl bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
-                <Code2 size={20} />
-              </div>
-              <h3 className="font-bold text-white text-base">Problem Solving</h3>
-              <p className="text-xs text-zinc-400 line-clamp-3">
-                Keen problem solver, active on LeetCode/GeeksforGeeks, specialized in complex algorithms.
-              </p>
-            </div>
-            <Link href="/intro" className="text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 group-hover:translate-x-1 transition-all mt-2">
-              See Skills <ArrowRight size={12} />
-            </Link>
-          </div>
-
-          {/* Card 4: Coffee Stats */}
-          <div className="glass-card p-6 rounded-2xl flex flex-col justify-between gap-6 relative overflow-hidden group">
-            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-teal-600/10 to-transparent rounded-full -z-10" />
-            <div className="flex flex-col gap-3">
-              <div className="w-10 h-10 rounded-xl bg-teal-600/10 border border-teal-500/20 flex items-center justify-center text-teal-400">
-                ☕
-              </div>
-              <h3 className="font-bold text-white text-base">Philosophy</h3>
-              <p className="text-xs text-zinc-400 line-clamp-3">
-                Combining high-caffeine efficiency with clean component-driven React architectures.
-              </p>
-            </div>
-            <Link href="/contact" className="text-xs font-semibold text-teal-400 hover:text-white flex items-center gap-1 group-hover:translate-x-1 transition-all mt-2">
-              Hire Me <ArrowRight size={12} />
+          <div className="flex flex-col gap-3 flex-shrink-0">
+            <a
+              href="https://github.com/prachikkk101/MediAssist-AI"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-white text-black font-semibold rounded-full hover:bg-zinc-200 transition-colors shadow-xl flex items-center gap-1.5 text-sm"
+            >
+              GitHub Repo <ExternalLink size={14} />
+            </a>
+            <Link
+              href="/projects"
+              className="px-6 py-3 bg-rose-600/10 hover:bg-rose-600/20 text-rose-300 font-semibold rounded-full border border-rose-500/20 transition-colors flex items-center gap-1.5 text-sm justify-center"
+            >
+              Full Details <ArrowRight size={14} />
             </Link>
           </div>
         </div>
-      </section>
 
-      {/* Featured Projects Highlight Banner */}
-      <section className="glass rounded-3xl p-8 md:p-12 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 border border-white/10 shadow-2xl">
-        <div className="absolute inset-0 bg-gradient-to-r from-violet-900/10 to-emerald-900/5 -z-10" />
-        <div className="flex flex-col gap-4 max-w-xl text-center md:text-left items-center md:items-start">
-          <span className="text-xs font-bold uppercase tracking-wider text-emerald-400">E-Commerce & Artificial Intelligence</span>
-          <h3 className="text-2xl sm:text-3xl font-extrabold text-white">AI Shop Project Integration</h3>
-          <p className="text-zinc-400 text-sm leading-relaxed">
-            I built a fully functional store dashboard with shopping cart state and an LLM chatbot support agent that can guide users on product recommendations, answer FAQs, and complete actions inline.
-          </p>
-          <div className="flex gap-3 text-xs text-zinc-500 font-semibold mt-1">
-            <span className="px-2 py-1 rounded bg-zinc-900 border border-white/5">Next.js</span>
-            <span className="px-2 py-1 rounded bg-zinc-900 border border-white/5">Tailwind v4</span>
-            <span className="px-2 py-1 rounded bg-zinc-900 border border-white/5">LLM Chatbot API</span>
+        {/* Pipeline Flow */}
+        <div className="flex flex-col gap-4 mb-8">
+          <span className="text-xs font-bold uppercase tracking-wider text-zinc-500">6-Stage Agent Pipeline</span>
+          <div className="flex flex-wrap items-center gap-2">
+            {["📄 OCR Agent", "🧠 Parser Agent", "📚 RAG Agent", "💬 Explain Agent", "📋 Summary Agent", "🥗 Nutrition Agent"].map((step, i, arr) => (
+              <React.Fragment key={step}>
+                <span className="px-3 py-1.5 rounded-lg bg-zinc-900 border border-white/5 text-xs text-zinc-300 font-semibold">{step}</span>
+                {i < arr.length - 1 && <span className="text-zinc-600 text-xs">→</span>}
+              </React.Fragment>
+            ))}
           </div>
         </div>
-        <div className="flex gap-4">
-          <Link
-            href="/projects"
-            className="px-6 py-3 bg-white text-black font-semibold rounded-full hover:bg-zinc-200 transition-colors shadow-xl flex items-center gap-1.5 text-sm"
-          >
-            Case Study <ExternalLink size={14} />
-          </Link>
+
+        {/* Tech Stack */}
+        <div className="flex flex-wrap gap-2">
+          {["Python", "FastAPI", "LangGraph", "LangChain", "Ollama", "Qwen 2.5 (7B)", "ChromaDB", "HuggingFace Embeddings", "EasyOCR", "PyPDF", "React", "TypeScript", "Vite", "RAG"].map((t) => (
+            <span key={t} className="px-2.5 py-1 rounded bg-zinc-900 border border-white/5 text-[11px] text-zinc-400 font-semibold">{t}</span>
+          ))}
         </div>
       </section>
     </div>

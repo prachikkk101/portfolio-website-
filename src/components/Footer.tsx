@@ -50,7 +50,7 @@ export default function Footer() {
               <Github size={18} />
             </a>
             <a
-              href="https://linkedin.com/in/prachi-khandelwal"
+              href="https://www.linkedin.com/in/prachi-khandelwal-035518320?utm_source=share_via&utm_content=profile&utm_medium=member_android"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-zinc-900 border border-white/5 flex items-center justify-center text-zinc-400 hover:text-white hover:border-violet-500/50 hover:bg-zinc-800 transition-all shadow-sm"
@@ -74,7 +74,7 @@ export default function Footer() {
             </a>
           </div>
           <span className="text-zinc-500 text-xs flex items-center gap-1">
-            Based in Pune, India <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            Based in India <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
           </span>
         </div>
       </div>
@@ -83,7 +83,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-zinc-600">
         <p>© {currentYear} Prachi Khandelwal. All rights reserved.</p>
         <p className="flex items-center gap-1">
-          Made with <Heart size={10} className="text-red-500 fill-red-500" /> & Next.js in Pune
+          Made with <Heart size={10} className="text-red-500 fill-red-500" /> & Next.js in India
         </p>
       </div>
     </footer>

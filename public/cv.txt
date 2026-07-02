@@ -2,41 +2,96 @@
 PRACHI KHANDELWAL
 Full Stack Developer | UI/UX Designer | Problem Solver
 ======================================================================
-Location: Pune, Maharashtra, India
+Location: Chennai, Tamil Nadu, India
 Email: khandelwalprachi42@gmail.com
 GitHub: https://github.com/prachikkk101
 ======================================================================
 
 SUMMARY
 -------
-Passionate and result-oriented Full Stack Web Developer and UI/UX Designer based in Pune, India. Enthusiastic about solving complex algorithmic challenges, designing elegant user interfaces, and building responsive, high-performance web applications. Deeply interested in integrating AI features (like LLM chatbots) to create intelligent, user-centric web experiences.
+Passionate and result-oriented Full Stack Web Developer and UI/UX Designer based in Chennai, India. Enthusiastic about solving complex algorithmic challenges, designing elegant user interfaces, and building responsive, high-performance web applications. Deeply interested in integrating AI features (like LLM chatbots) to create intelligent, user-centric web experiences.
 
 TECHNICAL SKILLS
 ----------------
-* Frontend: HTML5, CSS3, JavaScript (ES6+), TypeScript, React.js, Next.js, Tailwind CSS
-* Backend: Node.js, Express, Python, API Integrations
-* Databases: PostgreSQL, MongoDB, SQL
-* Tools & Workflows: Git & GitHub, Postman, Vite, NPM, Responsive Web Design
+* Languages & Frameworks: Python, C / C++, Java, OOP, PyTorch, TensorFlow, Scikit-learn
+* Machine Learning & AI: Machine Learning, EfficientNet-B0, CNNs, ANN, YOLO, RAG, LangChain, LangGraph, Transformers, LLM, GenAI, NLP, FastAPI, OpenCV
+* Frontend: HTML, CSS, JavaScript (ES6+), React.js, Tailwind CSS
+* Backend & Databases: API Integrations, PostgreSQL, MongoDB, SQL
+* Tools & Workflows: Git & GitHub, Postman, NPM, Responsive Web Design
 
 PROJECTS
 --------
-1. AI Shop (Active Project)
-   * A premium e-commerce platform integrated with an AI Chatbot assistant.
-   * Features: Dynamic product filtering, cart management, and a context-aware chatbot helper powered by modern LLM APIs to handle customer support.
-   * Tech Stack: Next.js, React, Tailwind CSS, JavaScript
+1. AI Shop – Full Stack AI E-Commerce Platform
+   * Full-stack MERN e-commerce platform with an AI shopping assistant powered by the Google Gemini API.
+   * Features: Dynamic product catalog with category/tag filtering, persistent cart with real-time updates, context-aware AI chatbot for recommendations and support, RESTful backend APIs, MongoDB/Mongoose data modeling, and cloud deployment.
+   * Tech Stack: React, JavaScript, CSS, React Router, Node.js, Express.js, MongoDB, Mongoose, Google Gemini API
+   * Live: https://ai-shop-lac.vercel.app
+   * GitHub: https://github.com/prachikkk101/AI_shop
 
-2. Apple Store Clone
-   * High-fidelity interactive clone of the Apple Store webpage showcasing premium aesthetics.
-   * Replicated fluid animations, product carousels, and responsive layouts.
-   * Tech Stack: React, Tailwind CSS, CSS Animations
+2. Disease Predictor – AI Precision Pesticide Spraying System (Ongoing)
+   * AI-driven precision agriculture system for rice plant disease classification with planned IoT-based automated pesticide spraying.
+   * Implemented: EfficientNet-B0 transfer learning classifier across 10 disease categories — 97.27% test accuracy. Merged Kaggle + Mendeley dataset with Albumentations augmentation, AdamW + CosineAnnealingLR training, domain shift analysis.
+   * Planned: YOLO localization, semantic segmentation, AI treatment recommendation, IoT hardware integration, Edge AI on Raspberry Pi / NVIDIA Jetson.
+   * Tech Stack: Python, PyTorch, EfficientNet-B0, Transfer Learning, CNNs, OpenCV, Albumentations
+   * GitHub: https://github.com/prachikkk101/disease-predictor.git
 
-3. Netflix UI Clone
-   * Responsive video-streaming user interface with dynamic categories and preview banners.
-   * Tech Stack: React, CSS, TMDB API Integration
+3. YouTube Q&A RAG Model
+   * Conversational question-answering tool leveraging Retrieval-Augmented Generation (RAG) based on video transcripts.
+   * Features: Automated transcript parsing, semantic vector search, and precise LLM answer synthesis.
+   * Tech Stack: Python, RAG, LangChain, Vector DB, LLM APIs
+   * GitHub: https://github.com/prachikkk101/Rag-model
 
-4. Telemedicine Portal (Nabha)
-   * Healthcare web app allowing remote doctor booking, patient records lookup, and appointment schedules.
-   * Tech Stack: React, Node.js, CSS
+4. GPT-2 Transformer from Scratch
+   * Pure PyTorch from-scratch implementation of the complete GPT-2 decoder-only Transformer architecture — no pretrained libraries used.
+   * Implemented: Multi-head causal self-attention (Q/K/V matrices), causal masking, residual connections, layer normalization, feed-forward MLP blocks, token + positional embeddings, cross-entropy training, GPU-accelerated inference.
+   * Text generation with Greedy, Temperature, Top-k, and Top-p (Nucleus) Sampling. 10-phase build pipeline from raw corpus to autoregressive generation.
+   * Tech Stack: Python, PyTorch, GPT-2 Architecture, Multi-Head Attention, Causal Masking, Transformer Architecture, Tokenization, GPU / CUDA
+   * GitHub: https://github.com/prachikkk101/gpt2-llm-model-
+
+5. Movie Genre Predictor
+   * Natural Language Processing classifier predicting movie genres from textual plot synopses.
+   * Features: Text cleaning pipeline, TF-IDF vector parsing, and multi-label machine learning classification.
+   * Tech Stack: Python, NLP, Scikit-Learn, Machine Learning
+   * GitHub: https://github.com/prachikkk101/movie_genre-predictor
+
+6. MNIST Digit Recognizer
+   * Neural network classifier built to recognize handwritten digits from the MNIST benchmark dataset.
+   * Features: Feedforward backpropagation optimization, loss/accuracy curves, and custom weight visualizations.
+   * Tech Stack: Python, NumPy, TensorFlow/Keras, Neural Networks
+   * GitHub: https://github.com/prachikkk101/ml-model
+
+7. MediAssist AI Portal
+   * Multi-agent AI-powered healthcare assistant for understanding complex medical reports through OCR, LLM parsing, RAG, and intelligent multi-agent workflows.
+   * Features: EasyOCR document extraction, 6-stage LangGraph pipeline (OCR→Parse→RAG→Explain→Summarize→Nutrition), ChromaDB vector retrieval, Qwen 2.5 local LLM via Ollama, personalized nutrition recommendations, and LangGraph MemorySaver conversation memory.
+   * Tech Stack: Python, FastAPI, LangGraph, LangChain, Ollama, Qwen 2.5 (7B), ChromaDB, HuggingFace Embeddings, EasyOCR, PyPDF, React, TypeScript, Vite, RAG
+   * GitHub: https://github.com/prachikkk101/MediAssist-AI
+
+8. Cat vs Dog Classifier
+   * Binary image classification model using convolutional neural networks to differentiate cats and dogs.
+   * Features: PyTorch convolution blocks, preprocessing transformations, and real-time image augmentation.
+   * Tech Stack: Python, PyTorch, CNN, Computer Vision, Image Augmentation
+   * GitHub: https://github.com/prachikkk101/cat-vs-dog-classifier
+
+9. Duplicate Question Detector
+   * NLP similarity classifier identifying duplicate question intent using the Quora Question Pairs dataset.
+   * Features: Text preprocessing, string fuzz ratio similarity, and supervised classification trees with XGBoost.
+   * Tech Stack: Python, NLP, Semantic Similarity, XGBoost, Scikit-Learn
+   * GitHub: https://github.com/prachikkk101/duplicate-question-pairs
+
+10. Apple Store Clone
+    * High-fidelity interactive clone of the Apple Store webpage showcasing premium aesthetics.
+    * Tech Stack: React, Tailwind CSS, CSS Animations
+    * GitHub: https://github.com/prachikkk101/apple-store
+
+11. Netflix UI Clone
+    * Responsive video-streaming user interface with dynamic categories and preview banners.
+    * Tech Stack: React, CSS, TMDB API Integration
+    * GitHub: https://github.com/prachikkk101/netflix-clone
+
+12. Telemedicine Portal (Nabha)
+    * Healthcare web app allowing remote doctor booking, patient records lookup, and appointment schedules.
+    * Tech Stack: React, Node.js, CSS
+    * GitHub: https://github.com/prachikkk101/telemedicine-app-nabha
 
 EDUCATION & CERTIFICATIONS
 --------------------------

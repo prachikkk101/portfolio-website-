@@ -123,17 +123,17 @@ export default function Contact() {
             github.com/prachikkk101
           </a>
           <a
-            href="https://linkedin.com/in/prachi-khandelwal"
+            href="https://www.linkedin.com/in/prachi-khandelwal-035518320?utm_source=share_via&utm_content=profile&utm_medium=member_android"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 hover:text-white transition-colors"
           >
             <Linkedin size={16} className="text-violet-400" />
-            linkedin.com/in/prachi-khandelwal
+            linkedin.com/in/prachi-khandelwal-035518320
           </a>
           <span className="flex items-center gap-2">
             <MapPin size={16} className="text-emerald-400 animate-pulse" />
-            Pune, Maharashtra, India
+            Chennai, Tamil Nadu, India
           </span>
         </div>
       </div>

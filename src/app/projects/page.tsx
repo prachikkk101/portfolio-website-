@@ -8,98 +8,187 @@ export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [activeModal, setActiveModal] = useState<number | null>(null);
 
-  const categories = ["All", "AI & Fullstack", "Clones", "System Apps"];
+  const categories = ["All", "AI & Fullstack"];
 
   const projectList = [
     {
-      id: 1,
-      title: "AI Shop E-Commerce Platform",
+      id: 11,
+      title: "MediAssist AI Portal",
       category: "AI & Fullstack",
-      shortDescription: "A premium e-commerce marketplace featuring an integrated LLM Chatbot assistant for client support.",
-      fullDescription: "AI Shop is a full-featured e-commerce system that combines traditional store elements (dynamic product catalog, tags, category sorting, persistent local storage cart) with an intelligent conversational support assistant. The chatbot uses natural language processing to answer specific product inquiries, guide users to check out, and recommend catalog matches inline.",
-      techStack: ["Next.js", "React.js", "Tailwind CSS v4", "LLM APIs", "Local Storage", "Node.js"],
-      github: "https://github.com/prachikkk101/ai-shop",
+      shortDescription: "Multi-agent AI healthcare assistant that understands complex medical reports through intelligent document analysis, OCR, RAG, and LLM-powered explanations.",
+      fullDescription: "MediAssist AI Portal is a multi-agent AI-powered healthcare assistant that helps users understand complex medical reports through intelligent document analysis. It supports PDF and image-based reports, extracts medical information using EasyOCR, structures data with LLM-powered parsing (Qwen 2.5 via Ollama), retrieves trusted knowledge using Retrieval-Augmented Generation with ChromaDB, and provides patient-friendly explanations, automatic summarization, and personalized nutrition recommendations. The system is built on a modular multi-agent LangGraph architecture where specialized agents collaborate — PDF Reader / OCR Agent → Parser Agent → RAG Agent → Explanation Agent → Summary Agent → Nutrition Agent — with conversation memory via LangGraph MemorySaver and a modern React + TypeScript frontend dashboard.",
+      techStack: ["Python", "FastAPI", "LangGraph", "LangChain", "Ollama", "Qwen 2.5 (7B)", "ChromaDB", "HuggingFace Embeddings", "EasyOCR", "PyPDF", "React", "TypeScript", "Vite", "RAG", "Vector Embeddings"],
+      github: "https://github.com/prachikkk101/MediAssist-AI",
       live: "#",
       features: [
-        "Interactive context-aware chat box representing store policies and products.",
-        "Fully reactive global cart state across pages.",
-        "Responsive grid filtering system using modern CSS grids.",
+        "EasyOCR integration for scanned PDF/image report extraction (JPG, PNG, PDF support).",
+        "6-stage LangGraph multi-agent pipeline: OCR → Parse → RAG → Explain → Summarize → Nutrition.",
+        "ChromaDB vector store with HuggingFace embeddings for medical knowledge retrieval.",
+        "Qwen 2.5 (7B) local LLM via Ollama for privacy-safe, patient-friendly medical explanations.",
+        "Personalized nutrition & lifestyle recommendations generated per report findings.",
+        "Conversation memory with LangGraph MemorySaver for contextual multi-turn interactions.",
+        "Modern React + TypeScript responsive dashboard and chat interface via Vite.",
+      ],
+      color: "from-rose-500/20 to-red-500/10",
+      border: "border-rose-500/20",
+      accent: "bg-rose-500/10 text-rose-400",
+    },
+    {
+      id: 8,
+      title: "GPT-2 Transformer from Scratch",
+      category: "AI & Fullstack",
+      shortDescription: "Pure PyTorch from-scratch recreation of the GPT-2 decoder-only Transformer — covering multi-head self-attention, causal masking, autoregressive training, and probabilistic text generation.",
+      fullDescription: "GPT-2 Transformer from Scratch is a deep learning project that manually recreates the complete decoder-only Transformer architecture introduced by OpenAI using pure PyTorch. Built entirely from first principles — covering token embeddings, learnable positional encoding, multi-head causal self-attention with Q/K/V matrices, scaled dot-product attention, causal masking, residual connections, layer normalization, feed-forward MLP blocks, cross-entropy training, backpropagation, and autoregressive text generation. The project was implemented across 10 sequential phases: Data Preparation → Tokenization → Embedding Layers → Multi-Head Attention → Causal Masking → Transformer Decoder Blocks → Model Training → Text Generation → Inference Pipeline → GPU Optimization. Text generation supports Greedy Decoding, Temperature Sampling, Top-k Sampling, and Top-p (Nucleus) Sampling. Fully GPU-accelerated via CUDA-compatible PyTorch tensor operations.",
+      techStack: ["Python", "PyTorch", "GPT-2 Architecture", "Multi-Head Attention", "Causal Masking", "Transformer Architecture", "Autoregressive LM", "Top-k / Top-p Sampling", "GPU / CUDA", "NLP", "Tokenization", "Cross Entropy Loss"],
+      github: "https://github.com/prachikkk101/gpt2-llm-model-",
+      live: "#",
+      features: [
+        "Complete GPT-2 decoder-only Transformer built from scratch — no pretrained libraries used.",
+        "Multi-head causal self-attention with Q, K, V matrices and scaled dot-product attention.",
+        "Causal masking preventing future token leakage during autoregressive training.",
+        "Residual connections + layer normalization + dropout for stable deep transformer training.",
+        "Token embeddings + learnable positional embeddings for sequence position encoding.",
+        "10-phase pipeline: Data Prep → Tokenization → Embeddings → Attention → Masking → Decoder Blocks → Training → Generation → Inference → GPU Optimization.",
+        "Text generation with Greedy, Temperature, Top-k, and Top-p (Nucleus) Sampling strategies.",
+        "GPU-accelerated training and inference via CUDA-compatible PyTorch tensor operations.",
+      ],
+      color: "from-purple-500/20 to-pink-500/10",
+      border: "border-purple-500/20",
+      accent: "bg-purple-500/10 text-purple-400",
+    },
+    {
+      id: 6,
+      title: "Disease Predictor – Precision Spraying AI",
+      category: "AI & Fullstack",
+      shortDescription: "Ongoing AI precision agriculture system — EfficientNet-B0 rice disease classifier (97.27% accuracy) being extended with YOLO localization, segmentation, and IoT-based automated pesticide spraying.",
+      fullDescription: "Disease Predictor is an AI-driven precision agriculture project focused on reducing pesticide usage, farming costs, and environmental impact by identifying diseased rice plants and enabling targeted pesticide spraying. The current implementation uses transfer learning with EfficientNet-B0 to classify rice plant diseases from leaf images across 10 disease categories — achieving 97.27% test accuracy on a merged Kaggle + Mendeley dataset. Future phases will integrate YOLO for disease localization, semantic segmentation for infection severity estimation, and IoT-based hardware (cameras, microcontrollers, pumps) for automated precision spraying. Edge AI deployment on Raspberry Pi / NVIDIA Jetson is planned for real-world field use.",
+      techStack: ["Python", "PyTorch", "EfficientNet-B0", "Transfer Learning", "CNNs", "OpenCV", "Albumentations", "AdamW", "CosineAnnealingLR", "YOLO (planned)", "FastAPI (planned)", "Edge AI (planned)"],
+      github: "https://github.com/prachikkk101/disease-predictor.git",
+      live: "#",
+      features: [
+        "EfficientNet-B0 transfer learning classifier across 10 rice disease categories — 97.27% test accuracy.",
+        "Unified dataset built by merging Kaggle & Mendeley datasets with advanced augmentation (Albumentations).",
+        "Confidence-based disease prediction pipeline with confusion matrix evaluation and domain shift analysis.",
+        "AdamW optimizer + CosineAnnealingLR scheduler + label smoothing + early stopping for robust training.",
+        "Planned: YOLO localization → semantic segmentation → AI treatment recommendation engine.",
+        "Planned: IoT hardware integration (cameras, microcontrollers, pumps) for automated field spraying.",
+        "Planned: Edge AI deployment on Raspberry Pi / NVIDIA Jetson for real-time field inference.",
+      ],
+      color: "from-emerald-500/20 to-green-500/10",
+      border: "border-emerald-500/20",
+      accent: "bg-emerald-500/10 text-emerald-400",
+    },
+    {
+      id: 7,
+      title: "YouTube Q&A RAG Model",
+      category: "AI & Fullstack",
+      shortDescription: "Conversational question-answering tool leveraging RAG to answer queries based on YouTube video transcripts.",
+      fullDescription: "RAG Model is an intelligent conversational search assistant designed to answer queries by retrieving relevant transcript context from YouTube videos. The system uses the YouTube Transcript API to download textual content, partitions and indexes it using vector databases, and employs Retrieval-Augmented Generation (RAG) to generate responses via LLM APIs.",
+      techStack: ["Python", "RAG", "LangChain", "Vector DB", "LLM APIs", "YouTube API"],
+      github: "https://github.com/prachikkk101/Rag-model",
+      live: "#",
+      features: [
+        "Automated transcript fetching and parsing from YouTube video links.",
+        "Semantic chunking and text vectorization with high-efficiency embeddings.",
+        "Precision question-answering with citation and reference context lookup.",
+      ],
+      color: "from-blue-500/20 to-cyan-500/10",
+      border: "border-blue-500/20",
+      accent: "bg-blue-500/10 text-blue-400",
+    },
+    {
+      id: 1,
+      title: "AI Shop – Full Stack AI E-Commerce",
+      category: "AI & Fullstack",
+      shortDescription: "Full-stack MERN e-commerce platform with a Google Gemini AI shopping assistant, persistent cart, dynamic catalog, and cloud deployment.",
+      fullDescription: "AI Shop is a full-stack AI-powered e-commerce platform combining a modern shopping experience with an intelligent conversational assistant. It features a dynamic product catalog with category and tag filtering, persistent shopping cart with real-time updates, smart product search, and an AI chatbot powered by the Google Gemini API for personalized recommendations and instant customer support. Built on a complete MERN architecture with separate frontend (Vercel) and backend (Render) deployments, offering a scalable responsive experience across devices.",
+      techStack: ["React", "JavaScript", "CSS", "React Router", "Node.js", "Express.js", "MongoDB", "Mongoose", "Google Gemini API"],
+      github: "https://github.com/prachikkk101/AI_shop",
+      live: "https://ai-shop-lac.vercel.app",
+      features: [
+        "AI shopping assistant powered by Google Gemini API for personalized recommendations and support.",
+        "Persistent shopping cart with real-time updates and global state management.",
+        "Dynamic product catalog with category, tag filtering, and smart search.",
+        "Context-aware chatbot for customer support and product queries.",
+        "RESTful backend APIs with Node.js, Express.js, and MongoDB/Mongoose.",
+        "Fully responsive UI optimized for desktop and mobile via React Router.",
+        "Independent frontend deployment on Vercel and backend on Render.",
       ],
       color: "from-violet-500/20 to-indigo-500/10",
       border: "border-violet-500/20",
       accent: "bg-violet-500/10 text-violet-400",
     },
     {
-      id: 2,
-      title: "Apple Store Website Clone",
-      category: "Clones",
-      shortDescription: "High-fidelity frontend clone replicating the luxurious product carousels and smooth layouts of Apple.",
-      fullDescription: "A visual masterclass replicating the official Apple Store page. Special emphasis was placed on implementing clean micro-animations, slide transitions, expandable specs tables, and a responsive floating bag utility dropdown.",
-      techStack: ["React.js", "Tailwind CSS", "CSS Keyframes", "Vite", "HTML5/CSS3"],
-      github: "https://github.com/prachikkk101/apple-store",
+      id: 13,
+      title: "Duplicate Question Detector",
+      category: "AI & Fullstack",
+      shortDescription: "NLP similarity classifier identifying semantically identical question pairs using the Quora dataset.",
+      fullDescription: "Duplicate Question Pairs is a machine learning text classifier trained on the Quora Question Pairs dataset. It analyzes pairs of questions to detect if they convey duplicate semantic meaning. Features text tokenization, string metrics, semantic similarity scoring, and tree-based classifiers for duplicate detection.",
+      techStack: ["Python", "NLP", "Semantic Similarity", "XGBoost", "Feature Engineering", "Scikit-Learn"],
+      github: "https://github.com/prachikkk101/duplicate-question-pairs",
       live: "#",
       features: [
-        "Polished, hardware-accelerated fluid scroll carousels.",
-        "Detailed comparison panel for device models with responsive columns.",
-        "High-performance media loaders for device previews.",
+        "Advanced text preprocessing (tokenization, word counts, character counts).",
+        "String matching metrics (FuzzyWuzzy, Cosine Similarity, Jaccard distance).",
+        "Supervised classification modeling with XGBoost trees achieving high AUC-ROC scores.",
       ],
-      color: "from-zinc-500/20 to-zinc-800/10",
-      border: "border-zinc-500/20",
-      accent: "bg-zinc-500/10 text-zinc-300",
+      color: "from-fuchsia-500/20 to-purple-500/10",
+      border: "border-fuchsia-500/20",
+      accent: "bg-fuchsia-500/10 text-fuchsia-400",
     },
     {
-      id: 3,
-      title: "Netflix Clone UI",
-      category: "Clones",
-      shortDescription: "Video-streaming interface mockup complete with category horizontal lists and interactive preview banner.",
-      fullDescription: "A responsive Netflix UI replica showing list categories (Trending, Top Rated, Action, Comedy) with trailer hover plays. Implemented fetching data dynamically using mock API layouts and structured TMDB datasets.",
-      techStack: ["React.js", "CSS Modules", "TMDB API", "Dynamic Video Players"],
-      github: "https://github.com/prachikkk101/netflix-clone",
+      id: 9,
+      title: "Movie Genre Predictor",
+      category: "AI & Fullstack",
+      shortDescription: "NLP model classifying movie genres from textual plots and descriptions.",
+      fullDescription: "Movie Genre Predictor is a natural language processing (NLP) application engineered to predict movie genres based on textual plot synopsis data. Implementing robust preprocessing (lemmatization, stopword removal), TF-IDF vectorizers, and supervised machine learning classifiers, it models multi-label classification to map narratives to respective film genres.",
+      techStack: ["Python", "NLP", "Scikit-Learn", "TF-IDF", "Machine Learning", "Text Preprocessing"],
+      github: "https://github.com/prachikkk101/movie_genre-predictor",
       live: "#",
       features: [
-        "Hover preview trailers integrated with dynamic video container.",
-        "Infinite scrolling horizontal sliders.",
-        "Fully responsive details sidebar for selected shows.",
+        "Advanced text preprocessing pipeline utilizing NLTK or SpaCy.",
+        "TF-IDF vectorizer matrix transformation for feature representation.",
+        "Multi-label classification evaluating logistic regression and tree ensembles.",
       ],
-      color: "from-red-500/20 to-rose-950/10",
-      border: "border-red-500/20",
-      accent: "bg-red-500/10 text-red-400",
+      color: "from-teal-500/20 to-emerald-500/10",
+      border: "border-teal-500/20",
+      accent: "bg-teal-500/10 text-teal-400",
     },
     {
-      id: 4,
-      title: "Telemedicine Nabha Portal",
-      category: "System Apps",
-      shortDescription: "A clinic portal offering patient health dashboards, doctor search grids, and schedule selectors.",
-      fullDescription: "Designed for clinical and remote doctor interactions, the Telemedicine App enables patients to search doctor specialties, book appointments, check live status updates, and review digital prescription archives.",
-      techStack: ["React.js", "Node.js", "Tailwind CSS", "Express API", "PostgreSQL"],
-      github: "https://github.com/prachikkk101/telemedicine-app-nabha",
+      id: 12,
+      title: "Cat vs Dog Classifier",
+      category: "AI & Fullstack",
+      shortDescription: "Binary image classification CNN model designed to differentiate cats and dogs in visual data.",
+      fullDescription: "A binary image classifier trained using Convolutional Neural Networks (CNNs) in PyTorch to classify input images as either a cat or a dog. Features custom dataset loaders, real-time image augmentation pipelines to minimize overfitting, and deployment utilities for testing individual images.",
+      techStack: ["Python", "PyTorch", "CNN", "Computer Vision", "Image Augmentation", "Matplotlib"],
+      github: "https://github.com/prachikkk101/cat-vs-dog-classifier",
       live: "#",
       features: [
-        "Dynamic calendar booking interface with conflict resolution logic.",
-        "Doctor appointment scheduler dashboard view.",
-        "Patient medical history tracking chart.",
+        "Custom convolutional blocks (convolution, pooling, dropout) optimized for feature extraction.",
+        "Robust image preprocessing pipelines including resizing, cropping, and color jittering.",
+        "Dynamic inference script supporting single image inputs.",
       ],
-      color: "from-emerald-500/20 to-teal-500/10",
-      border: "border-emerald-500/20",
-      accent: "bg-emerald-500/10 text-emerald-400",
+      color: "from-indigo-500/20 to-sky-500/10",
+      border: "border-indigo-500/20",
+      accent: "bg-indigo-500/10 text-indigo-400",
     },
     {
-      id: 5,
-      title: "Amazon E-Commerce Clone",
-      category: "Clones",
-      shortDescription: "Visual recreation of the Amazon homepage featuring custom item carousels and shopping cart flows.",
-      fullDescription: "Rebuilt core Amazon retail patterns focusing on grid banners, persistent navigation searches, and checkout cart calculations.",
-      techStack: ["React.js", "CSS Modules", "Local Storage State", "Responsive Flexbox"],
-      github: "https://github.com/prachikkk101/amazon-clone",
+      id: 10,
+      title: "MNIST Digit Recognizer",
+      category: "AI & Fullstack",
+      shortDescription: "Deep neural network classifier built to recognize handwritten digits from the MNIST dataset.",
+      fullDescription: "This machine learning model addresses the classic MNIST digit recognition benchmark. Built to explore classification optimization, it trains multi-layer feedforward neural networks (or convolutional neural networks) with custom learning rate schedules, backpropagation optimizations, and metrics visualization for loss/accuracy progression.",
+      techStack: ["Python", "NumPy", "TensorFlow/Keras", "Deep Learning", "Neural Networks", "Matplotlib"],
+      github: "https://github.com/prachikkk101/ml-model",
       live: "#",
       features: [
-        "Replicated Amazon search auto-suggest dropdown visuals.",
-        "Add-to-cart count and total calculations dynamically synced.",
-        "Interactive product description tabs.",
+        "Handwritten digit image classification (0-9) with high validation accuracy.",
+        "Evaluation metrics with confusion matrices and misclassification visualization.",
+        "Weight initialization and batch normalization layers implementation.",
       ],
-      color: "from-amber-500/20 to-orange-500/10",
-      border: "border-amber-500/20",
-      accent: "bg-amber-500/10 text-amber-400",
+      color: "from-orange-500/20 to-red-500/10",
+      border: "border-orange-500/20",
+      accent: "bg-orange-500/10 text-orange-400",
     },
   ];
 
@@ -156,9 +245,6 @@ export default function Projects() {
             <div className={`absolute top-0 right-0 w-36 h-36 bg-gradient-to-bl ${project.color} blur-2xl rounded-full -z-10 group-hover:scale-125 transition-transform duration-500`} />
             
             <div className="flex flex-col gap-4">
-              <span className={`px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-widest w-fit border border-white/5 ${project.accent}`}>
-                {project.category}
-              </span>
               <h3 className="font-extrabold text-white text-xl tracking-tight leading-snug group-hover:text-emerald-400 transition-colors flex items-center gap-1">
                 {project.title} <ArrowUpRight size={16} className="opacity-0 group-hover:opacity-100 transition-opacity" />
               </h3>
@@ -205,9 +291,6 @@ export default function Projects() {
 
             {/* Modal Header */}
             <div className="flex flex-col gap-2">
-              <span className={`px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-widest w-fit border border-white/5 ${activeProject.accent}`}>
-                {activeProject.category}
-              </span>
               <h2 className="text-2xl md:text-3xl font-extrabold text-white pr-8">
                 {activeProject.title}
               </h2>
@@ -255,12 +338,16 @@ export default function Projects() {
               >
                 <Github size={16} /> Code Repository
               </a>
-              <a
-                href={activeProject.live}
-                className="px-5 py-2.5 bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 text-white font-semibold rounded-full flex items-center gap-2 text-sm transition-all shadow-lg shadow-violet-500/10"
-              >
-                <ExternalLink size={16} /> Live Preview
-              </a>
+              {activeProject.live !== "#" && (
+                <a
+                  href={activeProject.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-5 py-2.5 bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 text-white font-semibold rounded-full flex items-center gap-2 text-sm transition-all shadow-lg shadow-violet-500/10"
+                >
+                  <ExternalLink size={16} /> Live Preview
+                </a>
+              )}
             </div>
           </div>
         </div>

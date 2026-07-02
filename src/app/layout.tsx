@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Prachi Khandelwal | AI/ML Engineer & Problem Solver",
-  description: "Professional portfolio of Prachi Khandelwal - AI/ML engineer specializing in Machine Learning, Deep Learning models, data science, and intelligent full-stack integrations. VIT Chennai, India.",
-  keywords: ["Prachi Khandelwal", "AI/ML Engineer", "Machine Learning Practitioner", "Data Scientist", "VIT Chennai Student", "Deep Learning Models", "Next.js AI Integration", "Competitive Programming"],
+  title: "Prachi Khandelwal | AI/ML Developer & Problem Solver",
+  description: "Professional portfolio of Prachi Khandelwal - AI/ML developer specializing in Machine Learning, Deep Learning models, data science, and intelligent full-stack integrations. VIT Chennai, India.",
+  keywords: ["Prachi Khandelwal", "AI/ML Developer", "Machine Learning Practitioner", "Data Scientist", "VIT Chennai Student", "Deep Learning Models", "Next.js AI Integration", "Competitive Programming"],
   authors: [{ name: "Prachi Khandelwal", url: "https://github.com/prachikkk101" }],
   robots: "index, follow",
 };
