@@ -1,0 +1,50 @@
+======================================================================
+PRACHI KHANDELWAL
+Full Stack Developer | UI/UX Designer | Problem Solver
+======================================================================
+Location: Pune, Maharashtra, India
+Email: khandelwalprachi42@gmail.com
+GitHub: https://github.com/prachikkk101
+======================================================================
+
+SUMMARY
+-------
+Passionate and result-oriented Full Stack Web Developer and UI/UX Designer based in Pune, India. Enthusiastic about solving complex algorithmic challenges, designing elegant user interfaces, and building responsive, high-performance web applications. Deeply interested in integrating AI features (like LLM chatbots) to create intelligent, user-centric web experiences.
+
+TECHNICAL SKILLS
+----------------
+* Frontend: HTML5, CSS3, JavaScript (ES6+), TypeScript, React.js, Next.js, Tailwind CSS
+* Backend: Node.js, Express, Python, API Integrations
+* Databases: PostgreSQL, MongoDB, SQL
+* Tools & Workflows: Git & GitHub, Postman, Vite, NPM, Responsive Web Design
+
+PROJECTS
+--------
+1. AI Shop (Active Project)
+   * A premium e-commerce platform integrated with an AI Chatbot assistant.
+   * Features: Dynamic product filtering, cart management, and a context-aware chatbot helper powered by modern LLM APIs to handle customer support.
+   * Tech Stack: Next.js, React, Tailwind CSS, JavaScript
+
+2. Apple Store Clone
+   * High-fidelity interactive clone of the Apple Store webpage showcasing premium aesthetics.
+   * Replicated fluid animations, product carousels, and responsive layouts.
+   * Tech Stack: React, Tailwind CSS, CSS Animations
+
+3. Netflix UI Clone
+   * Responsive video-streaming user interface with dynamic categories and preview banners.
+   * Tech Stack: React, CSS, TMDB API Integration
+
+4. Telemedicine Portal (Nabha)
+   * Healthcare web app allowing remote doctor booking, patient records lookup, and appointment schedules.
+   * Tech Stack: React, Node.js, CSS
+
+EDUCATION & CERTIFICATIONS
+--------------------------
+* Relevant coursework in Data Structures & Algorithms, Web Development, and Machine Learning.
+* Strong profile in competitive programming and problem-solving platforms.
+
+INTERESTS & HIGHLIGHTS
+----------------------
+* Coding, designing micro-interactions, building AI-enabled apps.
+* Avid coffee drinker and technology enthusiast.
+======================================================================
