@@ -29,13 +29,13 @@ export default function Home() {
               Explore Projects <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </Link>
             
-            <a
-              href="/cv.txt"
-              target="_blank"
+            <Link
+              href="/resume"
               className="px-6 py-3 bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-white/10 hover:border-white/20 rounded-full font-semibold flex items-center gap-2 transition-all"
             >
               <FileText size={16} /> Resume
-            </a>
+            </Link>
+
             
             <Link
               href="/contact"

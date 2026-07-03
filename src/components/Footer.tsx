@@ -65,13 +65,12 @@ export default function Footer() {
             >
               <Mail size={18} />
             </a>
-            <a
-              href="/cv.txt"
-              target="_blank"
+            <Link
+              href="/resume"
               className="h-10 px-4 rounded-full bg-zinc-900 border border-white/5 flex items-center gap-1.5 text-zinc-400 hover:text-white hover:border-emerald-500/50 hover:bg-zinc-800 transition-all text-xs font-semibold"
             >
               Resume <ArrowUpRight size={13} />
-            </a>
+            </Link>
           </div>
           <span className="text-zinc-500 text-xs flex items-center gap-1">
             Based in India <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>

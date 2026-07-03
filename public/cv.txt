@@ -1,105 +1,144 @@
 ======================================================================
 PRACHI KHANDELWAL
-Full Stack Developer | UI/UX Designer | Problem Solver
+AI/ML Developer | Full Stack Developer | Deep Learning Engineer
 ======================================================================
-Location: Chennai, Tamil Nadu, India
-Email: khandelwalprachi42@gmail.com
-GitHub: https://github.com/prachikkk101
+Email:    khandelwalprachi42@gmail.com
+Phone:    +91 7878148960
+Website:  prachi-ai.dev
+LinkedIn: linkedin.com/in/prachi-khandelwal
+GitHub:   /prachikkk101
+LeetCode: leetcode.com/prachi1234
 ======================================================================
 
 SUMMARY
 -------
-Passionate and result-oriented Full Stack Web Developer and UI/UX Designer based in Chennai, India. Enthusiastic about solving complex algorithmic challenges, designing elegant user interfaces, and building responsive, high-performance web applications. Deeply interested in integrating AI features (like LLM chatbots) to create intelligent, user-centric web experiences.
+Innovative AI/ML Developer specializing in Python, PyTorch, LangGraph, and RAG systems,
+with demonstrated expertise in multi-agent architectures, LLM integration, and deep
+learning engineered from first principles. Architected and developed MediAssist AI Portal,
+GPT-2 Transformer from Scratch, and Disease Predictor — a precision agriculture AI
+achieving 97.27% classification accuracy. Former Intern at Oxygen Protech Pvt. Ltd.
+Passionate about building and optimizing scalable, real-world AI systems that bridge deep
+technical fundamentals with practical impact.
 
 TECHNICAL SKILLS
 ----------------
-* Languages & Frameworks: Python, C / C++, Java, OOP, PyTorch, TensorFlow, Scikit-learn
-* Machine Learning & AI: Machine Learning, EfficientNet-B0, CNNs, ANN, YOLO, RAG, LangChain, LangGraph, Transformers, LLM, GenAI, NLP, FastAPI, OpenCV
-* Frontend: HTML, CSS, JavaScript (ES6+), React.js, Tailwind CSS
-* Backend & Databases: API Integrations, PostgreSQL, MongoDB, SQL
-* Tools & Workflows: Git & GitHub, Postman, NPM, Responsive Web Design
+* AI/ML & DL:    PyTorch, TensorFlow, Scikit-learn, CNNs, ANN, YOLO, EfficientNet-B0, OpenCV
+* GenAI & NLP:   RAG, LangChain, LangGraph, Transformers, LLM pipelines, FastAPI
+* Languages:     Python, C/C++, Java, OOPs, Data Structures & Algorithms (DSA)
+* Web Dev:       HTML, CSS, JavaScript (ES6+), React.js, Tailwind CSS, PostgreSQL, MongoDB
+* Tools:         Git, GitHub, Postman, NPM, Linux / CLI
+
+EDUCATION
+---------
+* Vellore Institute of Technology (VIT Chennai)           July 2024 – Present
+  B.Tech in CSE (Cyber Physical Systems) — CGPA: 8.2/10
+
+* Central Academy Ambabari, Jaipur                        2022 – 2024
+  Class XII (CBSE) — Aggregate: 82%
+
+* St. Angela Sophia Sr. Sec. School, Jaipur               2020 – 2022
+  Class X (CBSE) — Aggregate: 92%
+
+WORK EXPERIENCE
+---------------
+Web Development Intern (Remote)                           May 2026 – June 2026
+Oxygen Protech Pvt. Ltd.
+* Engineered responsive and high-performance frontend interfaces using React.js and
+  Tailwind CSS, improving layout consistency and application responsiveness across
+  device breakpoints.
+* Conceptualized and structured robust client-server API integrations, utilizing modern
+  JavaScript (ES6+) paradigms to streamline dynamic asynchronous data streams and
+  optimize frontend states.
+* Collaborated closely within technical workflows leveraging Git and GitHub for version
+  control, while managing routine back-end routing configurations and continuous
+  interface iterations.
 
 PROJECTS
 --------
-1. AI Shop – Full Stack AI E-Commerce Platform
-   * Full-stack MERN e-commerce platform with an AI shopping assistant powered by the Google Gemini API.
-   * Features: Dynamic product catalog with category/tag filtering, persistent cart with real-time updates, context-aware AI chatbot for recommendations and support, RESTful backend APIs, MongoDB/Mongoose data modeling, and cloud deployment.
-   * Tech Stack: React, JavaScript, CSS, React Router, Node.js, Express.js, MongoDB, Mongoose, Google Gemini API
+1. MediAssist AI – Multi-Agent Healthcare Portal
+   * Engineered a multi-agent healthcare AI pipeline using LangGraph to translate complex
+     medical reports into clear, patient-friendly explanations.
+   * Implemented a RAG system with ChromaDB and a locally-hosted Qwen 2.5 (7B) LLM via
+     Ollama for privacy-safe medical insights.
+   * Built a full-stack solution with FastAPI and React + TypeScript, featuring EasyOCR
+     extraction and contextual multi-turn conversation memory.
+   * Tech Stack: Python, FastAPI, LangGraph, LangChain, Ollama, Qwen 2.5 (7B), ChromaDB,
+     HuggingFace Embeddings, EasyOCR, PyPDF, React, TypeScript, Vite, RAG
+   * GitHub: https://github.com/prachikkk101/MediAssist-AI
+
+2. GPT-2 Transformer from Scratch
+   * Architected a GPT-2 decoder-only Transformer from scratch in pure PyTorch to deepen
+     practical understanding of core LLM internals.
+   * Implemented multi-head causal self-attention with Q/K/V matrices, scaled dot-product
+     attention, and causal masking for stable training.
+   * Developed a 10-phase training/inference pipeline with GPU-accelerated generation,
+     supporting Greedy, Temperature, Top-k, and Top-p sampling.
+   * Tech Stack: Python, PyTorch, GPT-2 Architecture, Multi-Head Attention, Causal Masking,
+     Transformer Architecture, Tokenization, GPU / CUDA
+   * GitHub: https://github.com/prachikkk101/gpt2-llm-model-
+
+3. Disease Predictor – Precision Agriculture AI System
+   * Built an AI-driven precision agriculture solution to reduce pesticide overuse via
+     targeted disease detection in rice plants.
+   * Developed an EfficientNet-B0 classifier on a merged Kaggle + Mendeley dataset,
+     achieving 97.27% test accuracy across 10 disease categories.
+   * Designed a scalable roadmap for real-world deployment, integrating YOLO localization
+     and Edge AI inference on Raspberry Pi/Jetson.
+   * Tech Stack: Python, PyTorch, EfficientNet-B0, Transfer Learning, CNNs, OpenCV,
+     Albumentations, YOLO (planned), Edge AI (planned)
+   * GitHub: https://github.com/prachikkk101/disease-predictor.git
+
+4. AI Shop – Full Stack AI E-Commerce
+   * Full-stack MERN e-commerce platform with a Google Gemini AI shopping assistant,
+     persistent cart, dynamic catalog, and cloud deployment.
+   * Tech Stack: React, JavaScript, CSS, React Router, Node.js, Express.js, MongoDB,
+     Mongoose, Google Gemini API
    * Live: https://ai-shop-lac.vercel.app
    * GitHub: https://github.com/prachikkk101/AI_shop
 
-2. Disease Predictor – AI Precision Pesticide Spraying System (Ongoing)
-   * AI-driven precision agriculture system for rice plant disease classification with planned IoT-based automated pesticide spraying.
-   * Implemented: EfficientNet-B0 transfer learning classifier across 10 disease categories — 97.27% test accuracy. Merged Kaggle + Mendeley dataset with Albumentations augmentation, AdamW + CosineAnnealingLR training, domain shift analysis.
-   * Planned: YOLO localization, semantic segmentation, AI treatment recommendation, IoT hardware integration, Edge AI on Raspberry Pi / NVIDIA Jetson.
-   * Tech Stack: Python, PyTorch, EfficientNet-B0, Transfer Learning, CNNs, OpenCV, Albumentations
-   * GitHub: https://github.com/prachikkk101/disease-predictor.git
-
-3. YouTube Q&A RAG Model
-   * Conversational question-answering tool leveraging Retrieval-Augmented Generation (RAG) based on video transcripts.
-   * Features: Automated transcript parsing, semantic vector search, and precise LLM answer synthesis.
+5. YouTube Q&A RAG Model
+   * Conversational question-answering tool leveraging RAG to answer queries based on
+     YouTube video transcripts.
    * Tech Stack: Python, RAG, LangChain, Vector DB, LLM APIs
    * GitHub: https://github.com/prachikkk101/Rag-model
 
-4. GPT-2 Transformer from Scratch
-   * Pure PyTorch from-scratch implementation of the complete GPT-2 decoder-only Transformer architecture — no pretrained libraries used.
-   * Implemented: Multi-head causal self-attention (Q/K/V matrices), causal masking, residual connections, layer normalization, feed-forward MLP blocks, token + positional embeddings, cross-entropy training, GPU-accelerated inference.
-   * Text generation with Greedy, Temperature, Top-k, and Top-p (Nucleus) Sampling. 10-phase build pipeline from raw corpus to autoregressive generation.
-   * Tech Stack: Python, PyTorch, GPT-2 Architecture, Multi-Head Attention, Causal Masking, Transformer Architecture, Tokenization, GPU / CUDA
-   * GitHub: https://github.com/prachikkk101/gpt2-llm-model-
-
-5. Movie Genre Predictor
-   * Natural Language Processing classifier predicting movie genres from textual plot synopses.
-   * Features: Text cleaning pipeline, TF-IDF vector parsing, and multi-label machine learning classification.
-   * Tech Stack: Python, NLP, Scikit-Learn, Machine Learning
-   * GitHub: https://github.com/prachikkk101/movie_genre-predictor
-
-6. MNIST Digit Recognizer
-   * Neural network classifier built to recognize handwritten digits from the MNIST benchmark dataset.
-   * Features: Feedforward backpropagation optimization, loss/accuracy curves, and custom weight visualizations.
-   * Tech Stack: Python, NumPy, TensorFlow/Keras, Neural Networks
-   * GitHub: https://github.com/prachikkk101/ml-model
-
-7. MediAssist AI Portal
-   * Multi-agent AI-powered healthcare assistant for understanding complex medical reports through OCR, LLM parsing, RAG, and intelligent multi-agent workflows.
-   * Features: EasyOCR document extraction, 6-stage LangGraph pipeline (OCR→Parse→RAG→Explain→Summarize→Nutrition), ChromaDB vector retrieval, Qwen 2.5 local LLM via Ollama, personalized nutrition recommendations, and LangGraph MemorySaver conversation memory.
-   * Tech Stack: Python, FastAPI, LangGraph, LangChain, Ollama, Qwen 2.5 (7B), ChromaDB, HuggingFace Embeddings, EasyOCR, PyPDF, React, TypeScript, Vite, RAG
-   * GitHub: https://github.com/prachikkk101/MediAssist-AI
-
-8. Cat vs Dog Classifier
-   * Binary image classification model using convolutional neural networks to differentiate cats and dogs.
-   * Features: PyTorch convolution blocks, preprocessing transformations, and real-time image augmentation.
-   * Tech Stack: Python, PyTorch, CNN, Computer Vision, Image Augmentation
-   * GitHub: https://github.com/prachikkk101/cat-vs-dog-classifier
-
-9. Duplicate Question Detector
-   * NLP similarity classifier identifying duplicate question intent using the Quora Question Pairs dataset.
-   * Features: Text preprocessing, string fuzz ratio similarity, and supervised classification trees with XGBoost.
+6. Duplicate Question Detector
+   * NLP similarity classifier identifying semantically identical question pairs using
+     the Quora dataset.
    * Tech Stack: Python, NLP, Semantic Similarity, XGBoost, Scikit-Learn
    * GitHub: https://github.com/prachikkk101/duplicate-question-pairs
 
-10. Apple Store Clone
-    * High-fidelity interactive clone of the Apple Store webpage showcasing premium aesthetics.
-    * Tech Stack: React, Tailwind CSS, CSS Animations
-    * GitHub: https://github.com/prachikkk101/apple-store
+7. Movie Genre Predictor
+   * NLP model classifying movie genres from textual plots and descriptions.
+   * Tech Stack: Python, NLP, Scikit-Learn, TF-IDF, Machine Learning
+   * GitHub: https://github.com/prachikkk101/movie_genre-predictor
 
-11. Netflix UI Clone
-    * Responsive video-streaming user interface with dynamic categories and preview banners.
-    * Tech Stack: React, CSS, TMDB API Integration
-    * GitHub: https://github.com/prachikkk101/netflix-clone
+8. Cat vs Dog Classifier
+   * Binary image classification CNN model designed to differentiate cats and dogs.
+   * Tech Stack: Python, PyTorch, CNN, Computer Vision, Image Augmentation
+   * GitHub: https://github.com/prachikkk101/cat-vs-dog-classifier
 
-12. Telemedicine Portal (Nabha)
-    * Healthcare web app allowing remote doctor booking, patient records lookup, and appointment schedules.
-    * Tech Stack: React, Node.js, CSS
-    * GitHub: https://github.com/prachikkk101/telemedicine-app-nabha
+9. MNIST Digit Recognizer
+   * Deep neural network classifier built to recognize handwritten digits from MNIST.
+   * Tech Stack: Python, NumPy, TensorFlow/Keras, Deep Learning, Neural Networks
+   * GitHub: https://github.com/prachikkk101/ml-model
 
-EDUCATION & CERTIFICATIONS
---------------------------
-* Relevant coursework in Data Structures & Algorithms, Web Development, and Machine Learning.
-* Strong profile in competitive programming and problem-solving platforms.
+ACHIEVEMENTS
+------------
+* Millennium Fellow — United Nations and Millennium Campus Network              2026
+  Handpicked from a global pool of 60,000+ competitive applicants (top 4% acceptance
+  rate) to lead a specialized fellowship project directly advancing the UN Sustainable
+  Development Goals.
 
-INTERESTS & HIGHLIGHTS
-----------------------
-* Coding, designing micro-interactions, building AI-enabled apps.
-* Avid coffee drinker and technology enthusiast.
+* Round 2 Qualifier — Glytch Hackathon, VIT Chennai                            2026
+  Competed on a critical Smart India Hackathon (SIH) problem statement focusing on
+  designing architectural software tools for solving rural healthcare access challenges.
+
+POSITIONS OF RESPONSIBILITY
+----------------------------
+* Projects Lead @ HackClub, VIT Chennai                                         2025 – Present
+  Led the Web Development and App Development departments as Projects Lead at HackClub
+  VIT Chennai, driving technical project execution and collaborating with cross-functional
+  student teams to deliver impactful projects.
+
 ======================================================================
